@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.13)
 # Set PICO_PIO_USB_PATH or it defaults to ../Pico-PIO-USB
 # ---------------------------------------------------------------------------
 if(NOT DEFINED PICO_PIO_USB_PATH)
-    set(PICO_PIO_USB_PATH ${CMAKE_CURRENT_LIST_DIR}/../Pico-PIO-USB)
+    set(PICO_PIO_USB_PATH ${CMAKE_CURRENT_LIST_DIR}/lib/Pico-PIO-USB)
 endif()
 
 # Pull in Pico SDK (must be before project())
