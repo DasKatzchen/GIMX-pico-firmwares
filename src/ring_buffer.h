@@ -19,7 +19,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <string.h>
-#include "pico/platform.h"  // __force_inline, memory_barrier
+#include "hardware/clocks.h"
+#include "hardware/sync.h"
+#include <pico.h>  // __force_inline, memory_barrier
 
 #define RING_SIZE 512   /* must be a power of 2 */
 

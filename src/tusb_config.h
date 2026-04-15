@@ -35,6 +35,7 @@
 
 #define CFG_TUH_DEVICE_MAX      1   // one PC at a time
 #define CFG_TUH_HUB             0
+#define BOARD_TUH_RHPORT        1
 
 // CDC host RX/TX buffer sizes -- must fit at least one GIMX packet (max 66 B)
 #define CFG_TUH_CDC_RX_BUFSIZE  256

@@ -132,7 +132,7 @@ static void core1_main(void)
     /* Configure and start PIO USB host on port 1 */
     pio_usb_configuration_t pio_cfg = PIO_USB_DEFAULT_CONFIG;
     pio_cfg.pin_dp = PIO_USB_DP_PIN;
-    tuh_configure(1, TUH_CFGID_RPI_PIO_USB_CONFIGURATION, &pio_cfg);
+    tuh_configure(BOARD_TUH_RHPORT, TUH_CFGID_RPI_PIO_USB_CONFIGURATION, &pio_cfg);
     tuh_init(1);
 
     printf("core1: PIO USB host started (D+=%d D-=%d)\n",
